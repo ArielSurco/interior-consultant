@@ -82,7 +82,7 @@ body.hamburguer-open {
 
 .nav .nav-links {
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all 0.7s ease 0s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,10 +169,6 @@ body.hamburguer-open {
   background-position: 50% 50%;
 }
 
-.main .design {
-  margin-bottom: 100px;
-}
-
 .design .design-example {
   position: relative;
   width: 100%;
@@ -236,6 +232,24 @@ body.hamburguer-open {
   font-size: 1.8rem;
 }
 
+.footer {
+  margin-top: 150px;
+  height: 40px;
+  text-align: center;
+}
+
+.author {
+  color: var(--footer-text-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.author > .author--username {
+  color: inherit;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   body {
     width: 89.3vw;
@@ -294,6 +308,10 @@ body.hamburguer-open {
   .design-designer .design-date {
     font-size: 2.4rem;
   }
+
+  .footer {
+    margin-top: 195px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -308,5 +326,9 @@ body.hamburguer-open {
 
   .main .information .information__read-more {
     font-size: 1.8rem;
+  }
+
+  .footer {
+    margin-top: 240px;
   }
 }
