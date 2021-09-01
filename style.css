@@ -233,13 +233,15 @@ body.hamburguer-open {
 }
 
 .footer {
-  margin-top: 150px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 40px;
   text-align: center;
 }
 
 .author {
-  color: var(--footer-text-color);
+  color: var(--text-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
@@ -308,10 +310,6 @@ body.hamburguer-open {
   .design-designer .design-date {
     font-size: 2.4rem;
   }
-
-  .footer {
-    margin-top: 195px;
-  }
 }
 
 @media (min-width: 1440px) {
@@ -326,9 +324,5 @@ body.hamburguer-open {
 
   .main .information .information__read-more {
     font-size: 1.8rem;
-  }
-
-  .footer {
-    margin-top: 240px;
   }
 }
