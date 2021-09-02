@@ -16,11 +16,13 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
   width: 93.6vw;
   max-width: 1286px;
   margin: 0 auto;
   color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 body.hamburguer-open {
@@ -233,14 +235,18 @@ body.hamburguer-open {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  height: 40px;
+  height: 190px;
   text-align: center;
 }
 
 .author {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   color: var(--text-color);
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
@@ -310,6 +316,10 @@ body.hamburguer-open {
   .design-designer .design-date {
     font-size: 2.4rem;
   }
+
+  .footer {
+    height: 235px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -324,5 +334,9 @@ body.hamburguer-open {
 
   .main .information .information__read-more {
     font-size: 1.8rem;
+  }
+
+  .footer {
+    height: 280px;
   }
 }
